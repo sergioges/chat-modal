@@ -15,7 +15,6 @@ export default {
   setup() {
     // Store
     const studentStore = useStudentStore();
-    const newStudentMessage = studentStore.studentMessage;
 
     // Data
     const chatConversations = ref([]);
@@ -28,10 +27,12 @@ export default {
           data: { message: newValue },
         });
       }
+      // Se podrá observar cada una de las stores dedicadas a cada uno de los elementos del chat
+      // (teacher o download) para añadirlo según type al array chatConversations
     );
 
     // Methods 
-    const cargarDatos = async () => {
+    const loadingData = async () => {
       try {
         const response = await fetch('/chat-conversation.json');
         if (response.ok) {
@@ -45,16 +46,16 @@ export default {
     }
 
     onMounted(() => {
-      cargarDatos();
+      loadingData();
     });
 
-    return { newStudentMessage, chatConversations };
+    return { chatConversations };
   },
 };
 </script>
 
 <template>
-  <div class="wrapper overflow-y-auto">
+  <div class="wrapper overflow-auto">
     <div class="flex flex-col items-center w-full" v-for="(conversation, index) in chatConversations" :key="index">
       <download-chat v-if="conversation.type === 'download'" :content="conversation"></download-chat>
       <student-chat v-if="conversation.type === 'student'" :content="conversation"></student-chat>
@@ -65,6 +66,18 @@ export default {
 
 <style scoped>
 .wrapper {
-  height: 600px;
+  max-height: 600px;
+}
+
+.wrapper::-webkit-scrollbar {
+  width: 7px;
+}
+
+.wrapper::-webkit-scrollbar-track {
+  background: #ddd;
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+  background: #aaa;
 }
 </style>
