@@ -25,7 +25,7 @@ export default {
 <template>
   <div class="border-t-4 w-full my-3 divide-solid">
     <div class="flex justify-around mt-6">
-      <input type="text" class="rounded-full bg-gray-200 border border-gray-300 p-3 w-3/4 h-10" v-model="message" />
+      <input placeholder="Escribe tu mensaje y haz click en la flecha" type="text" class="rounded-full bg-gray-200 border border-gray-300 p-3 w-3/4 h-10" v-model="message" />
       <div>
         <img class="cursor-pointer" src="../../assets/send-regular-48.png" alt="Send Conversation" @click="sendMessage" />
       </div>
