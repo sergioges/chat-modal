@@ -27,7 +27,7 @@ export default {
     </div>
     <div>
       <img @click="downloadFile" class="cursor-pointer" src="../../assets/cloud-download-regular-48.png"
-        alt="Download file">
+        alt="Descargar ficheros">
     </div>
   </div>
 </template>

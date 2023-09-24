@@ -23,7 +23,7 @@ export default {
         </p>
       </div>
       <div class="flex items-center ml-3">
-        <img class="w-10 rounded-full" src="https://xsgames.co/randomusers/avatar.php?g=female" alt="Student Avatar" />
+        <img class="w-10 rounded-full" src="https://xsgames.co/randomusers/avatar.php?g=female" alt="Avatar Estudiante" />
       </div>
     </div>
   </div>
