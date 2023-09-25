@@ -23,7 +23,10 @@ export default {
     <div>
       <p class="text-xl mb-1">Versión {{ content.data.version }}</p>
       <p class="text-blue-500 font-bold">{{ content.data.title }}</p>
-      <p class="mb-2">{{ content.data.info }}</p>
+      <div class="flex mb-2">
+        <p>{{ content.data.info }}</p>
+        <p class="ml-3">{{ content.data.date }}</p>
+      </div>
     </div>
     <div>
       <img @click="downloadFile" class="cursor-pointer" src="../../assets/cloud-download-regular-48.png"

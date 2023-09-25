@@ -4,6 +4,7 @@ import DownloadChat from "./DownloadChat.vue";
 import StudentChat from "./StudentChat.vue";
 import TeacherChat from "./TeacherChat.vue";
 import { useStudentStore } from "../../stores/StudentChatStore";
+import { format } from 'date-fns';
 
 export default {
   name: "ChatModal",
@@ -22,13 +23,16 @@ export default {
     watch(
       () => studentStore.studentMessage,
       (newValue) => {
+        const newDate = new Date();
+        const formatedDate = format(newDate, 'dd MMM yyyy / HH:mm');
         chatConversations.value.push({
           type: "student",
-          data: { message: newValue },
+          data: { message: newValue, date: formatedDate },
         });
       }
       // Se podrá observar cada una de las stores dedicadas a cada uno de los elementos del chat
-      // (teacher o download) para añadirlo según type al array chatConversations
+      // (teacher o download) para añadirlo según type al array chatConversations.
+      // En el observable de student se puede añadir el servicio que enviaría la conversación al servidor
     );
 
     // Methods 

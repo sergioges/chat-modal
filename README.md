@@ -23,5 +23,6 @@ estar precargada con mensajes de estudiante y tutor, y varias entregas.
 - Tailwind
 - BoxIcon https://boxicons.com/
 - Avatar https://xsgames.co/randomusers/
+- date-fns (para formatear la fecha)
 
 

@@ -5,19 +5,22 @@
       "version": "1",
       "title": "New homework",
       "info": "Documento PDF (3.8 Mb)",
-      "url": "File 1"
+      "url": "File 1",
+      "date": "28 Dic 2018 / 14:45"
     }
   },
   {
     "type": "student",
     "data": {
-      "message": "No te digo trigo por no llamarte Rodrigor de la pradera qué dise usteer te va a hasé pupitaa benemeritaar jarl mamaar por la gloria"
+      "message": "No te digo trigo por no llamarte Rodrigor de la pradera qué dise usteer te va a hasé pupitaa benemeritaar jarl mamaar por la gloria",
+      "date": "28 Dic 2018 / 14:45"
     }
   },
   {
     "type": "teacher",
     "data": {
-      "message": "Condemor llevame al sircoo diodeno papaar papaar tiene musho peligro papaar papaar ese hombree benemeritaar va usté muy cargadoo"
+      "message": "Condemor llevame al sircoo diodeno papaar papaar tiene musho peligro papaar papaar ese hombree benemeritaar va usté muy cargadoo",
+      "date": "29 Dic 2018 / 10:11"
     }
   },
   {
@@ -26,19 +29,22 @@
       "version": "2",
       "title": "New investigation",
       "info": "Documento Word (9.8 Mb)",
-      "url": "File 2"
+      "url": "File 2",
+      "date": "30 Dic 2018 / 8:22"
     }
   },
   {
     "type": "student",
     "data": {
-      "message": "Caballo blanco caballo negroorl fistro tiene musho peligro quietooor va usté muy cargadoo está la cosa muy malar"
+      "message": "Caballo blanco caballo negroorl fistro tiene musho peligro quietooor va usté muy cargadoo está la cosa muy malar",
+      "date": "30 Dic 2018 / 08:22"
     }
   },
   {
     "type": "teacher",
     "data": {
-      "message": "A gramenawer te va a hasé pupitaa llevame al sircoo no te digo trigo por no llamarte Rodrigor benemeritaar a wan a wan."
+      "message": "A gramenawer te va a hasé pupitaa llevame al sircoo no te digo trigo por no llamarte Rodrigor benemeritaar a wan a wan.",
+      "date": "30 Dic 2018 / 15:25"
     }
   }
 ]
